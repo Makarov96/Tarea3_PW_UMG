@@ -11,26 +11,26 @@ window.addEventListener('load', () => {
 
     click_uno.addEventListener('click', () => {
 
-        window.location = "../index.html"
+        location.href = "../index.html"
     })
 
     click_dos.addEventListener('click', () => {
-        window.location = "../solicitud_empledo.html"
+        location.href = "../solicitud_empledo.html"
 
     })
 
     click_tres.addEventListener('click', () => {
-        window.location = "../reservacion_hotel.html"
+        location.href = "../reservacion_hotel.html"
 
     })
 
     click_cuatro.addEventListener('click', () => {
-        window.location = "../metodo_de_pago.html"
+        location.href = "../metodo_de_pago.html"
     })
 
 
     click_cinco.addEventListener('click', () => {
-        window.location = "../cotizacion_vechiculo.html"
+        location.href = "../cotizacion_vechiculo.html"
     })
 
 
