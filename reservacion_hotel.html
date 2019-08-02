@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/hotel.css">
+    <script src="./js/hotel.js"></script>
+    <script src="./Router/router.js"></script>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/material-components-web/dist/material-components-web.css">
+    <script src="./node_modules/material-components-web/dist/material-components-web.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="click_uno">Registro Medico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_dos">Solicitud de empledo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_tres">Reservacion cuarto de hotel</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_cuatro">Inscripcion Web y metodo de pago</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_cinco">Cotizacionvehiculo</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container text-center col-md-7">
+
+
+        <!--Target Materia-->
+        <div class="mdc-card">
+
+            <div id="container_dos" class="container dos">
+                <i class="material-icons">flight_takeoff</i>
+
+                <form action="">
+                    <!--  General -->
+                    <div class="form-group">
+                        <h2 class="heading">Registro de hotel</h2>
+
+                        <div class="form-group">
+                            <label for="name"><strong>Nombre Completo</strong></label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Ingrese nombre">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><strong>Correo</strong></label>
+                            <input type="email" id="correo" class="form-control" placeholder="Ingrese el correo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone"><strong>Celular</strong></label>
+                            <input type="tel" id="celular" class="form-control" placeholder="Ingrese su numero movil">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="street-number"><strong>Ingresa la cantidad de personas</strong></label>
+                            <input type="number" id="numero_personas" class="form-control" placeholder="ingrese un numero entre 1 y 15" min="0" max="15">
+                        </div>
+
+                        <div class="form-group">
+                            <label for=""><strong>Pais donde quiere reservar cuarto</strong></label>
+                            <input type="text" id="pais" class="form-control" placeholder="ej. Brasil, Argentina, Uruguay, etc">
+                        </div>
+
+                        <div class="form-group">
+                            <label for=""><strong>Ciudad donde quiere reservar cuarto</strong></label>
+                            <input type="text" id="ciudad" class="form-control" placeholder="ej. Brasilia, Buenos Aires, Monte Video, etc">
+                        </div>
+
+
+                    </div>
+
+                    <button id="boton" type="submit" class="btn btn-dark btn-block">Submit</button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

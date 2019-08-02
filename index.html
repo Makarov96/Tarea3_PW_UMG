@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./Router/router.js"></script>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/material-components-web/dist/material-components-web.css">
+    <script src="./node_modules/material-components-web/dist/material-components-web.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="click_uno">Registro Medico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_dos">Solicitud de empledo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_tres">Reservacion cuarto de hotel</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_cuatro">Inscripcion Web y metodo de pago</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_cinco">Cotizacionvehiculo</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container text-center col-md-5">
+
+
+        <!--Target Materia-->
+        <div class="mdc-card">
+            <div>
+                <i class="material-icons">local_hospital</i>
+            </div>
+            <!--Bootstrap form-->
+            <form class="text-left text-bold">
+                <img src="" alt="">
+
+                <div class="form-group">
+                    <label><strong>Nombre</strong></label>
+                    <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Apellidos</strong></label>
+                    <input type="text" id="apellido" class="form-control" placeholder="Ingresa tu apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label> <strong>Correo</strong></label>
+                    <input type="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Ingresa tu email" required>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Selecciona tu tipo de desempe&ntilde;o</label>
+                    <select class="form-control" id="select" name="sellist1" required>
+                        <option>Selecciona una Opcion</option>
+                        <option>Medico</option>
+                        <option>Cirujano</option>
+                        <option>Medico-Cirujano</option>
+                        <option>Enfermero</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Id de trabajador</strong></label>
+                    <input type="text" class="form-control" id="id_user" placeholder="Agrega tu ID">
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Contrase&ntilde;a</strong></label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+
+
+                <button type="submit" id="submit" class="btn btn-dark" disabled>Enviar</button>
+            </form>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="rbutton">
+        <button class="mdc-fab" aria-label="Favorite"><i class="material-icons dos">add</i></button>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    background: rgba(33, 33, 33, 1) !important;
+}
+
+.container {
+    margin-top: 80px;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.mdc-card {
+    padding: 40px;
+    max-width: 600px;
+}
+
+.material-icons {
+    font-size: 70px !important;
+}
+
+.form {
+    text-align: left !important;
+    margin: 10px;
+}
+
+.mdc-fab {
+    background-color: rgb(143, 143, 143) !important;
+    position: relative;
+}
+
+.rbutton {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.material-icons.dos {
+    font-size: 30px !important;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0C9;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 22px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/empleo.css">
+    <script src="./js/empleo.js"></script>
+    <script src="./Router/router.js"></script>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/material-components-web/dist/material-components-web.css">
+    <script src="./node_modules/material-components-web/dist/material-components-web.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="click_uno">Registro Medico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_dos">Solicitud de empledo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_tres">Reservacion cuarto de hotel</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_cuatro">Inscripcion Web y metodo de pago</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_cinco">Cotizacionvehiculo</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container text-center col-md-7">
+
+
+        <!--Target Materia-->
+        <div class="mdc-card">
+
+            <div class="container dos">
+                <i class="material-icons">
+                    next_week
+                </i>
+
+
+                <!--Bootstrap form-->
+                <form class="text-left text-bold">
+
+
+                    <div class="form-group">
+                        <label for=""><strong>Nombre</strong></label>
+                        <input type="text" class="form-control" name="" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><strong>Apellido</strong></label>
+                        <input type="text" class="form-control" name="" id="apellido" placeholder="Ingresa tu apellido">
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><strong>Ingresa tu correo</strong></label>
+                        <input type="email" class="form-control" name="" id="correo" placeholder="ingresa tu correo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><strong>Puesto al que desea aplicar</strong></label>
+                        <select name="" id="puesto" class="form-control">
+                            <option value="">Seleccione una opcion</option>
+                            <option value="">Desarrollador-Front-End</option>
+                            <option value="">Desarrollador-Back-End</option>
+                            <option value="">Dise&ntilde;ador</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for=""><strong>Ingrese fecha de inicio</strong></label>
+                        <input type="date" name="" id="fecha" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><strong>Situacion actual</strong></label>
+                        <select name="" id="situacion" class="form-control">
+                                <option value="">Seleccione una opcion</option>
+                                <option value="">Empleado</option>
+                                <option value="">Desempleado</option>
+                                <option value="">Particular</option>
+                                <option value="">Estudiante</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><strong>Envienos su CV por una URL</strong></label>
+                        <input type="url" name="" id="url" class="form-control" placeholder="https://tucv.com">
+                    </div>
+            </div>
+
+            <button type="submit" id="submit" class="btn btn-dark btn-lg">Enviar</button>
+        </div>
+        </form>
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

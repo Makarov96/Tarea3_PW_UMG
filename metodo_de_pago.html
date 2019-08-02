@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="./js/online_pagos.js"></script>
+    <link rel="stylesheet" href="./css/online_pago.css">
+    <script src="./Router/router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="click_uno">Registro Medico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_dos">Solicitud de empledo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_tres">Reservacion cuarto de hotel</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_cuatro">Inscripcion Web y metodo de pago</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="click_cinco">Cotizacionvehiculo</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container text-center col-md-5">
+
+
+        <!--Target Materia-->
+        <div class="container dos">
+
+            <div class="card">
+                <form class="ui form">
+                    <h2 class="ui dividing header">Informacion de Compra</h2>
+                    <div class="field">
+                        <label>Informacion de comprador</label>
+                        <div class="two fields">
+                            <div class="field">
+                                <input id="nombre_uno" type="text" name="shipping[first-name]" placeholder="Primer Nombre">
+                            </div>
+                            <div class="field">
+                                <input id="nombre_dos" type="text" name="shipping[last-name]" placeholder="Segundo Nombre">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Direccion Comprador</label>
+                        <div class="fields">
+                            <div class="twelve wide field">
+                                <input id="direccion" type="text" name="shipping[address]" placeholder="Direccion">
+                            </div>
+                            <div class="four wide field">
+                                <input id="apartamento" type="text" name="shipping[address-2]" placeholder="Apt #">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two fields">
+
+                        <div class="field">
+                            <label>Pais</label>
+                            <div class="default text">Selecciona Pais</div>
+                            <select name="" id="pais">
+                                    <option value="">Selecciona uno</option>
+                                    <option value="">Guatemala</option>
+                                    <option value="">Belice</option>
+                                    <option value="">Costa Rica</option>
+                                    <option value="">Salvador</option>
+                                </select>
+
+                        </div>
+                    </div>
+                    <h4 class="ui dividing header">Informacion de comprador</h4>
+                    <div class="field">
+                        <label>Tipo de targeta</label>
+                        <select id="tarjeta">
+                            <option value="">Selecciona una opcion</option>
+                            <option value="">Visa</option>
+                            <option value="">Master Card</option>
+                            <option value="">Paypal</option>
+                        </select>
+                    </div>
+                    <div class="fields">
+                        <div class="seven wide field">
+                            <label>Numero de tarjeta</label>
+                            <input id="numero" type="number" name="card[number]" maxlength="16" placeholder="Tarjeta #">
+                        </div>
+                        <div class="three wide field">
+                            <label>CVC</label>
+                            <input id="cvc" type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
+                        </div>
+                        <div class="six wide field">
+                            <label>Expiracion</label>
+                            <div class="two fields">
+                                <div class="field">
+                                    <select id="mes" class="ui fluid search dropdown" name="card[expire-month]">
+                                        <option value="">Mes</option>
+                                        <option value="1">Enero</option>
+                                        <option value="2">Febrero</option>
+                                        <option value="3">Marzo</option>
+                                        <option value="4">Abril</option>
+                                        <option value="5">Mayo</option>
+                                        <option value="6">Junio</option>
+                                        <option value="7">Julio</option>
+                                        <option value="8">Agosto</option>
+                                        <option value="9">Septiembre</option>
+                                        <option value="10">Octubre</option>
+                                        <option value="11">Noviembre</option>
+                                        <option value="12">Diciembre</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <input id="year" type="number" min="1900" max="2099" step="1" value="2016" placeholder="A&ntilde;o">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="ui dividing header">Empaquetado</h4>
+
+                    <div class="ui segment">
+                        <div class="field">
+                            <div class="ui toggle checkbox">
+                                <input type="checkbox" name="gift" tabindex="0" class="show">
+                                <label>Desea incluir empaquetado?</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
